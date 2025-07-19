@@ -1,60 +1,11 @@
-# Clean Architecture (Data Layer, Domain Layer Exam)
+# Clean Architecture (Data Layer, Domain Layer Activity)
 
-Included in this repository is the pre-requisite <a href="[http://jsonplaceholder.typicode.com/](https://github.com/JCPradelPH/bootcamp-exam/blob/main/base_usecase.dart)" target="_blank">JSONPlaceholder service(http://jsonplaceholder.typicode.com/)</a>.
+Included in this repository is the pre-requisite <a href="[http://jsonplaceholder.typicode.com/](https://github.com/JCPradelPH/bootcamp-exam/blob/main/base_usecase.dart)" target="_blank">base_usecase.dart</a> file for creating UseCases.
 
 ## Instructions
-1. Use of frameworks such as React, Vue, Angular, etc. is not allowed. (Part 2)
-2. Use of other libraries is not allowed. (Part 1 and 2)
-3. You are only allowed to code in Javascript es5/es6. (Part 1 and 2)
-4. Html and styling with css is required and must be responsive. (Part 2)
-
-## Part 1 - Javascript Coding Challenge
-Kindly put your code on the provided .js file inside the part 1 folder.
-
-1. Create a function that can breakdown the bills in a given amount
-```
-	Example:
-		input: 2653
-		output: {
-			"1000": 2,
-			"500": 1,
-			"100": 1,
-			"50" : 1
-		}
- ```
-2. Given the object:
-```javascript
-let categories = [
-	{ id:'animals', parent: null },
-	{ id:'mammals', parent: 'animals' },
-	{ id:'cats', parent: 'mammals' },
-	{ id:'dogs', parent: 'mammals' },
-	{ id:'chihuahua', parent: 'dogs' },
-	{ id:'labrador', parent: 'dogs' },
-	{ id:'persian', parent: 'cats' },
-	{ id:'siamese', parent: 'cats' }
-]
-```
-Create a function that mutates the object to output:
-```json
-{
-    "animals": {
-        "mammals": {
-            "cats": {
-                "persian": {},
-                "siamese": {}
-            },
-            "dogs": {
-                "chihuahua": {},
-                "labrador": {}
-            }
-        }
-    }
-}
-```
-3. Using the <a href="http://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder service(http://jsonplaceholder.typicode.com/)</a>, create a function that makes 
-	 http requests from <a href="http://jsonplaceholder.typicode.com/users" target="_blank">http://jsonplaceholder.typicode.com/users</a> and <a href="http://jsonplaceholder.typicode.com/posts" target="_blank">http://jsonplaceholder.typicode.com/posts</a> 
-	 and then create the following json object format from the results:
+1. Fetch the list of users from <a href="http://jsonplaceholder.typicode.com/users" target="_blank">http://jsonplaceholder.typicode.com/users</a>.
+2. Fetch the list of posts from <a href="http://jsonplaceholder.typicode.com/users" target="_blank">http://jsonplaceholder.typicode.com/posts</a>.
+3. According to the responses from the users and posts endpoints, the presentation layer should retrieve a list of entities in the following structure. Ensure that all posts are mapped to their respective users.
 ```
 "userPosts": [
     {
@@ -92,76 +43,14 @@ Create a function that mutates the object to output:
     ...and so on
 ]
 ```
-## Part 2 - Responsive Layout Menu
-Using the provided HTML file inside the part 2 folder, kindly create a mobile web prototype that will list ALL the items separated by category from the given JSON object. 
 
-```javascript
-const menuData = {
-    "menus": {
-        "m001": {
-            "parent": "m000",
-            "title": "Breakfast Menu"
-        },
-        "m002": {
-            "parent": "m000",
-            "title": "Lunch Menu"
-        },
-        "m003": {
-            "parent": "m000",
-            "title": "Dinner Menu"
-        },
-        "m004": {
-            "parent": "m100",
-            "title": "Specials"
-        },
-        "d001": {
-            "parent": "m001",
-            "prepTimeMin": 5,
-            "title": "Pancakes",
-            "price": 110,
-        },
-        "d002": {
-            "parent": "m002",
-            "prepTimeMin": 10,
-            "title": "Red Snapper",
-            "price": 825,
-        },
-        "d003": {
-            "parent": "m002",
-            "prepTimeMin": 12,
-            "title": "Lobster",
-            "price": 1200,
-        },
-        "d004": {
-            "parent": "m001",
-            "prepTimeMin": 10,
-            "title": "Apple Pie",
-            "price": 125,
-        },
-        "d005": {
-            "parent": "m003",
-            "prepTimeMin": 10,
-            "title": "Grouper Fillet",
-            "price": 650,
-        },
-        "d006": {
-            "parent": "m003",
-            "prepTimeMin": 12,
-            "title": "Cowboy Chicken",
-            "price": 530,
-        },
-        "d007": {
-            "parent": "m004",
-            "prepTimeMin": 10,
-            "title": "Wagyu Steak",
-            "price": 1200,
-        }
-    }
-};
-```
+## Rules
+1. Create a new repository with a new Flutter project for this activity.
+2. The folder structure of your project should strictly follow the clean architecture pattern.
+3. Mapping and API requests should be handled within the Data and Domain layers.
+4. The Presentation Layer should only be used in calling UseCases.
+5. No UI and State Management is needed in the Presentation Layer. Just log the required results in the console.
 
-Feel free to style your work the way you wanted but you must follow the format from the given image below for displaying the items.
-
-![](https://firebasestorage.googleapis.com/v0/b/buzfy-e233d.appspot.com/o/applicant-exam-res%2FScreen%20Shot%202018-12-18%20at%209.25.38%20PM.png?alt=media&token=c3c5404a-1293-461e-a5a8-d8ac98968f02)
+Once done, you can send the link to your repositories to pradeljc@gmail.com and paulo.espiel@gmail.com
 
 Good Luck!
