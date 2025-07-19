@@ -1,4 +1,4 @@
-# Clean Architecture (Data Layer, Domain Layer Activity)
+# Clean Architecture Bootcamp Activity
 
 Included in this repository is the pre-requisite <a href="[http://jsonplaceholder.typicode.com/](https://github.com/JCPradelPH/bootcamp-exam/blob/main/base_usecase.dart)" target="_blank">base_usecase.dart</a> file for creating UseCases.
 
@@ -43,13 +43,14 @@ Included in this repository is the pre-requisite <a href="[http://jsonplaceholde
     ...and so on
 ]
 ```
+4. The UI should only have one button with an event that when tapped, it will log the mapped userPosts in the console. No additional UI and State Management needed.
 
 ## Rules
 1. Create a new repository with a new Flutter project for this activity.
 2. The folder structure of your project should strictly follow the clean architecture pattern.
 3. Mapping and API requests should be handled within the Data and Domain layers.
 4. The Presentation Layer should only be used in calling UseCases.
-5. No UI and State Management is needed in the Presentation Layer. Just log the required results in the console.
+5. Your UI should be placed inside the Presentation Layer.
 
 Once done, you can send the link to your repositories to pradeljc@gmail.com and paulo.espiel@gmail.com
 
