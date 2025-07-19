@@ -1,6 +1,6 @@
-# My Applicant Examination
+# Clean Architecture (Data Layer, Domain Layer Exam)
 
-Included in this repository are two folders containing the two parts of the exam. Kindly read the instructions carefully.
+Included in this repository is the pre-requisite <a href="[http://jsonplaceholder.typicode.com/](https://github.com/JCPradelPH/bootcamp-exam/blob/main/base_usecase.dart)" target="_blank">JSONPlaceholder service(http://jsonplaceholder.typicode.com/)</a>.
 
 ## Instructions
 1. Use of frameworks such as React, Vue, Angular, etc. is not allowed. (Part 2)
