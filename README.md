@@ -51,6 +51,7 @@ Included in this repository is the pre-requisite <a href="[http://jsonplaceholde
 3. Mapping and API requests should be handled within the Data and Domain layers.
 4. The Presentation Layer should only be used in calling UseCases.
 5. Your UI should be placed inside the Presentation Layer.
+6. Make sure to follow strict clean architecture foldering and naming for folders and filenames
 
 Once done, you can send the link to your repositories to pradeljc@gmail.com and paulo.espiel@gmail.com
 
